@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
+import Home from './pages/Home.jsx';
 import ProductDetail from "./pages/ProductDetail";
 
 function App() {
@@ -14,3 +14,13 @@ function App() {
 }
 
 export default App
+
+// function App() {
+//   return (
+//     <div style={{ color: "white", padding: "20px" }}>
+//       <h1>App is rendering ✅</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
