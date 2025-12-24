@@ -19,3 +19,16 @@ export const fetchProducts = async ({ page = 1, pageSize = 20 }) => {
 
   return response.data.products;
 };
+
+export const searchProductsByName = async ({ query, page = 1, pageSize = 20 }) => {
+  const response = await api.get("/cgi/search.pl", {
+    params: {
+      search_terms: query,
+      json: true,
+      page,
+      page_size: pageSize,
+    },
+  });
+
+  return response.data.products;
+};
